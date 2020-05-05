@@ -1,0 +1,17 @@
+<%= flash[:notice] %>
+<section class="single-blog">
+  <section class="book-box">
+    <h3 class="book-box-headline">Title:
+      <%= @book.title %>
+    </h3>
+    </div>
+    <p class="single-text">body:
+      <%= @book.body %>
+    </p>
+    </div>
+  </section>
+  <tr>
+    <td><%= link_to "Edit", edit_book_path(@book) %> |</td>
+    <td><a href="/books">Back</a></td>
+  </tr>
+</section>
